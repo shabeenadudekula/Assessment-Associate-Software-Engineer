@@ -1,0 +1,30 @@
+<html>
+    <head>
+    </head>
+    <body>
+     Array Elements:<input type="text" id="n1"/><br>
+     <input type="submit" value="Click" onclick="f1()"/>
+     <script>
+        function f1()
+        {
+        debugger;
+        n3=document.getElementById("n1").value
+        a=n3.split(" ");
+        
+        for( i=0;i<a.length;i++)
+        {
+           for(j=i+1;j<a.length;j++)
+           {
+            if(parseInt(a[i])<=parseInt(a[j]))
+            {
+                t=a[i];
+                a[i]=a[j];
+                a[j]=t;
+            }
+           }
+        }
+        document.write(a)
+        }
+     </script>
+    </body>
+</html>

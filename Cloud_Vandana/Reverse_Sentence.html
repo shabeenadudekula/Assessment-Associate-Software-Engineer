@@ -1,0 +1,25 @@
+<html>
+    <head>
+    </head>
+    <body>
+        n1:<input type="text" id="er"/><br>
+        <input type="submit" value="Click" onclick="f1()"/>
+        <script>
+        function f1()
+        {
+            //debugger;
+            n2=document.getElementById("er").value;
+            a=n2.split(" ");
+            for(i=0;i<a.length;i++)
+            {
+                t=a[i];
+                for(j=t.length-1;j>=0;j--)
+                {
+                    document.write(t[j]);
+                }
+                document.write(' ');
+            }
+        }
+        </script>
+    </body>
+</html>

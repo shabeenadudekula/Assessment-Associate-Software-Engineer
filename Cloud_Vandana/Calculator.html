@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <style>
+        .center {
+            margin: auto;
+
+            width: 40%;
+            padding: 40px;
+            margin-top: 10%;
+            height: 60%;
+            background-color: rgba(131, 124, 124, 0.557);
+        }
+
+        .ab {
+            margin: auto;
+
+            margin-top: 40px;
+            border-spacing: 0;
+            border-collapse: collapse;
+
+        }
+
+        td {
+
+            background-color: black;
+        }
+
+        input {
+            height: 30px;
+            width: 40px;
+            background-color: black;
+            color: white;
+            border: none;
+            width: 100%;
+
+        }
+        table{
+            height:300px;
+            width:350px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function f1() {
+            sy.ans.value = eval(sy.ans.value)
+        }
+    </script>
+    <div class="center">
+        <div>
+            <form name="sy">
+                <table class="ab" >
+                    <tr>
+                        <th colspan="3" style="background-color:white"><input type="text" name="ans"
+                                style="height: 30px;width: 200px;color:black; background-color:white;margin-left: 10px;" /></th>
+                        <th style="background-color:rgb(78, 126, 126)"><input type="button" value="AC"
+                                style="background-color:rgb(78, 126, 126)" onclick="ans.value=' '" /></th>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="9" onclick="ans.value+='9'" /></td>
+                        <td><input type="button" value="8" onclick="ans.value+='8'" /></td>
+                        <td><input type="button" value="7" onclick="ans.value+='7'" /></td>
+                        <td style="background-color:grey"><input type="button" value="*" style="background-color:grey"
+                                onclick="ans.value+='*'" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" onclick="ans.value+='4'" /></td>
+                        <td><input type="button" value="5" onclick="ans.value+='5'" /></td>
+                        <td><input type="button" value="6" onclick="ans.value+='6'" /></td>
+                        <td style="background-color:grey"><input type="button" value="-" style="background-color:grey"
+                                onclick="ans.value+='-'" /></td>
+                    </tr>
+                    <tr class="bt1">
+                        <td><input type="button" value="1" onclick="ans.value+='1'" /></td>
+                        <td><input type="button" value="2" onclick="ans.value+='2'" /></td>
+                        <td><input type="button" value="3" onclick="ans.value+='3'" /></td>
+                        <td style="background-color:grey"><input type="button" value="+" style="background-color:grey"
+                                onclick="ans.value+='+'" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="." onclick="ans.value+='.'" /></td>
+                        <td><input type="button" value="0" onclick="ans.value+='0'" /></td>
+                        <td><input type="button" value="=" onmousemove="f1()" /></td>
+                        <td style="background-color:grey"><input type="button" value="/" style="background-color:grey"
+                                onclick="ans.value+='/'" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
